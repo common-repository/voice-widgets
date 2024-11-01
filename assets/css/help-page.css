@@ -1,0 +1,178 @@
+.qcld-wpvoice-section-block {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 20px 20px 0px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.qc-voice-widgets-accordion {
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    margin: 50px auto;
+  }
+  
+  .qc-voice-widgets-accordion-item {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+  }
+  
+  .qc-voice-widgets-accordion-item-title {
+    position: relative;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .qc-voice-widgets-accordion-item-desc {
+    display: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    border-top: 1px dashed #ddd;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+  }
+  
+  .qc-voice-widgets-accordion-item input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  .qc-voice-widgets-accordion-item input[type="checkbox"]:checked ~ .qc-voice-widgets-accordion-item-desc {
+    display: block;
+  }
+  
+  .qc-voice-widgets-accordion-item input[type="checkbox"] ~ .qc-voice-widgets-accordion-item-title .icon:after {
+    content: "+";
+  }
+  
+  .qc-voice-widgets-accordion-item
+    input[type="checkbox"]:checked
+    ~ .qc-voice-widgets-accordion-item-title
+    .icon:after {
+    content: "-";
+  }
+  
+  .qc-voice-widgets-accordion-item input[type="checkbox"]:checked ~ .qc-voice-widgets-accordion-item-title {
+    font-weight: bold;
+  }
+  
+  .qc-voice-widgets-accordion-item:first-child {
+    margin-top: 0;
+  }
+  .qcld-col-6 {
+    flex: 0 0 auto;
+    min-width: 50%;
+    display: inline-block;
+    float: right;
+    margin-bottom: 100px;
+  }
+  .icon {
+    margin-left: 14px;
+    font-weight: normal;
+  }
+    
+
+.qcld-accordion-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto 15px auto;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.qcld-accordion-box .form-table td {
+    position: relative;
+}
+
+#text_to_speech_pitch,
+#text_to_speech_volume,
+#text_to_speech_rate{
+    width: 100%;
+}
+
+.text_to_speech_wrap{
+    width: 96%;
+    height: auto;
+    background: #e9f9ff;
+    padding: 2%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.qcld-accordion-box output{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    color: #333;
+    font-weight: bold;
+    top: -10px;
+    right: 0px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 3px 7px;
+}
+
+#qcld_page_call_text_to_speech-show-custom_post-list ul.checkbox-list,
+#qcld_page_call_text_to_speech-show-pages-list ul.checkbox-list {
+  margin-left: 35px;
+  width: 230px;
+  max-height: 250px;
+  overflow: auto;    
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#text_to_speech-show-pages-list ul.checkbox-list {
+    margin-left: 35px;
+}
+
+.text_to_speech-pro-alert {
+    color: #ce0707;
+}
+
+
+
+/* Scroll bar design css  */
+
+#qcld_page_call_text_to_speech-show-custom_post-list ul.checkbox-list::-webkit-scrollbar-track ,
+#qcld_page_call_text_to_speech-show-pages-list ul.checkbox-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+#qcld_page_call_text_to_speech-show-custom_post-list ul.checkbox-list::-webkit-scrollbar,
+#qcld_page_call_text_to_speech-show-pages-list ul.checkbox-list::-webkit-scrollbar{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#qcld_page_call_text_to_speech-show-custom_post-list ul.checkbox-list::-webkit-scrollbar-thumb,
+#qcld_page_call_text_to_speech-show-pages-list ul.checkbox-list::-webkit-scrollbar-thumb{
+  background-color: #626262;
+  border: 2px solid #555555;
+}
